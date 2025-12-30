@@ -26,3 +26,11 @@ print(20 - 10/5 *2**2)
 
 # with open("ejemplo.txt", "a", encoding="utf-8") as f:
 #     f.write("\nHola mundo ")
+
+
+def write_news(news: dict, extension = 'txt'):
+    """
+    Escribimos las noticias en un archivo
+    """
+    with open(f"news.{extension}", "w", encoding='UTF-8') as f:
+        f.write(str(news))
